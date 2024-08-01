@@ -35,20 +35,23 @@ if __name__ == "__main__":
     count = 10
 
     for username in usernames:
-        search_query = f"from:{username} -is:reply -is:retweet"  #search by username, filter out any replies or retweets
-        tweets = search_tweets(search_query, count)
-        if tweets:
-            write_to_csv("posts.csv", tweets)
+        if username:
+            search_query = f"from:{username} -is:reply -is:retweet"  #search by username, filter out any replies or retweets
+            tweets = search_tweets(search_query, count)
+            if tweets:
+                write_to_csv("posts.csv", tweets)
+            else:
+                print("error retrieving tweets")
         else:
-            print("error retrieving tweets")
+            print("there is no username")
     
     for keyword in keywords:
-        search_query = f"{keyword} -is:reply -is:retweet"
-        tweets = search_tweets(search_query, count)
-        if tweets:
-            write_to_csv("posts.csv", tweets)
+        if keyword:
+            search_query = f"{keyword} -is:reply -is:retweet"
+            tweets = search_tweets(search_query, count)
+            if tweets:
+                write_to_csv("posts.csv", tweets)
+            else:
+                print("error retrieving tweets")
         else:
-            print("error retrieving tweets")
-            
-
-        
+            print("there is no keyword")
