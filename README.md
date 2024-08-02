@@ -8,7 +8,7 @@ this script is to test if the tokens and our developer keys are authorized to st
 this script lets us search and retrieve tweets by keyword and username. Per request, each account can retrieve up to 100 tweets, and each keyword/keywords can retrieve up to 100. The search_tweets function takes in a search query (either username or keyword), a maximum count for the number of tweets wanted, and then retrieves recent tweets. We then call the write_to_csv function to write the retrieved posts to the organized csv file, separating the tweet and the time it was created. 
 
 
-#Available Tweet Fields:
+# Available Tweet Fields:
 
 Available Tweet Fields
 id: The unique identifier for the tweet.
