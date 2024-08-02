@@ -53,5 +53,5 @@ attachments: Information about media attachments (e.g., photos, videos).
 example:
 For usernames, it searches for tweets posted by the user, excluding replies and retweets. For keywords, it searches for tweets containing the keyword or keywords depending on the string, again excluding replies and retweets. In both cases, it retrieves a total of 10 tweets and writes them to posts.csv
 
-# replies.py:
+# Replies.py:
 This is the initial script and takes in an input from the terminal. It takes in a username, count, will return the most recent activity on that account, and store in tweets.txt. However, this script does not exclude replies, and will return the link to the replied tweet if given in the tweet. 
