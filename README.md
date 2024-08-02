@@ -10,11 +10,14 @@ this script lets us search and retrieve tweets by keyword and username. Per requ
 
 # Available Tweet Fields:
 
-Available Tweet Fields
 id: The unique identifier for the tweet.
+
 text: The text content of the tweet.
+
 created_at: The date and time when the tweet was created.
+
 author_id: The user ID of the author of the tweet.
+
 lang: The language of the tweet.
 source: The source of the tweet (e.g., Twitter for iPhone).
 in_reply_to_user_id: The user ID of the account this tweet is replying to, if applicable.
