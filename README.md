@@ -19,22 +19,35 @@ created_at: The date and time when the tweet was created.
 author_id: The user ID of the author of the tweet.
 
 lang: The language of the tweet.
+
 source: The source of the tweet (e.g., Twitter for iPhone).
+
 in_reply_to_user_id: The user ID of the account this tweet is replying to, if applicable.
+
 referenced_tweets: Information about any tweets that are referenced by this tweet.
+
 public_metrics: Engagement metrics, including:
+
 retweet_count: Number of retweets.
+
 reply_count: Number of replies.
+
 like_count: Number of likes.
+
 quote_count: Number of quotes.
+
 entities: Information about entities mentioned in the tweet, including:
 hashtags
 mentions
 urls
 media
+
 geo: Information about the geographic location where the tweet was created.
+
 place: Information about the place associated with the tweet.
+
 context_annotations: Annotations related to the tweet's context.
+
 attachments: Information about media attachments (e.g., photos, videos).
 
 example:
