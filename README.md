@@ -27,16 +27,10 @@ in_reply_to_user_id: The user ID of the account this tweet is replying to, if ap
 referenced_tweets: Information about any tweets that are referenced by this tweet.
 
 public_metrics: Engagement metrics, including:
-
 retweet_count: Number of retweets.
-
 reply_count: Number of replies.
-
 like_count: Number of likes.
-
 quote_count: Number of quotes.
-
-
 
 entities: Information about entities mentioned in the tweet, including:
 hashtags
