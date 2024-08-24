@@ -1,20 +1,20 @@
-import tweepy  # Library to interact with Twitter API
+import tweepy  
 from keys import bearer_token
 import csv
 import os
-import json  # We will be writing to a JSON file
+import json  
 
-from keys import openai_api_key  # Import OpenAI API key
-from keys import LANGCHAIN_API_KEY  # Import LangChain API key
-from langchain_openai import ChatOpenAI  # Import the OpenAI class to communicate with API
+from keys import openai_api_key  
+from keys import LANGCHAIN_API_KEY  
+from langchain_openai import ChatOpenAI
 
-# LangChain settings
-LANGCHAIN_TRACING_V2 = True  # LangChain tracing flag
-LANGCHAIN_ENDPOINT = "https://api.smith.langchain.com"  # API endpoint
-LANGCHAIN_PROJECT = "AI news project"  # Project name
+
+LANGCHAIN_TRACING_V2 = True  
+LANGCHAIN_ENDPOINT = "https://api.smith.langchain.com"  
+LANGCHAIN_PROJECT = "AI news project" 
 
 # Connect to Twitter API
-api = tweepy.Client(bearer_token)  # Use our bearer token to connect to the application on the dev account
+api = tweepy.Client(bearer_token)  
 
 def search_tweets(query, count):
     """Search for tweets based on a query and return them with attachments and username."""
